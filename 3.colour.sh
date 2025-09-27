@@ -4,4 +4,4 @@ R="e\[31m]"
 
 GREEN="e\[32m]"
 
-echo -e "$R RED COLOUR $NOCOLUR"
+echo -e "${R} RED COLOUR ${NOCOLUR}"
