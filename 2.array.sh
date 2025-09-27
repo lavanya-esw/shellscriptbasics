@@ -2,5 +2,5 @@
 
 FRUITS=("apple" "banana" "orange" "pineappale")
 
-LENGTH=$(${#FRUITS[@]})
+LENGTH=$({#FRUITS[@]})
 echo "Lenth of the array is $LENGTH"
