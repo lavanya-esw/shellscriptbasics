@@ -2,7 +2,7 @@
 
 #I want today's date with indian time
 
-DATE=$(date +"%A-%F-%T-%Z")
+DATE=$(TZ='Asia/Kolkata' date +"%A-%F-%T-%Z")
 echo "date:$DATE"
 #TZ='Asia/Kolkata' date
 
