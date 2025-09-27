@@ -4,6 +4,6 @@
 
 DATE=$(date +"%A, %F %T %Z")
 echo "date:$DATE"
-TZ='Asia/Kolkata' date
+#TZ='Asia/Kolkata' date
 
-echo "Time Zone:$TZ"
+echo "Time Zone:$(TZ='Asia/Kolkata' date)"
