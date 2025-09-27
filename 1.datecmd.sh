@@ -2,5 +2,5 @@
 
 #I want today's date with indian time
 
-DATE=$(date +%A, %d-%m-%y %T %z)
+DATE=$(date +%F)
 echo "date:$DATE"
