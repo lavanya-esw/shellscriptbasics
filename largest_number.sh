@@ -1,7 +1,6 @@
 #!/bin/bash
-
-for num in $@; do 
-    temp=$num
+temp=$1
+for num in $@; do  # 3 5 8 3
     if [ $num -gt $temp ]; then
        temp=$num
     fi
