@@ -3,10 +3,9 @@
 path=$1
 if [ ! -z path ]; then  
    
-   Files=$(find . -iname "*.txt")
-   echo -e "\n files are:"
-   echo -e "\n $Files"
-   for file in $FILE; do
+   for file in $(find . -iname "*.txt"); do
+   echo "file"$file"
    sed -i 's/FOO/BAR/g'
+   echo "string replaced"
    done 
 fi
