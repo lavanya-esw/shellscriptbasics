@@ -6,15 +6,16 @@ if [ ! -z $path ]; then
 
     if [ ! -d $path ]; then
         echo "given $path is a file"
+        if [ -r $path ] && [ -w $path ]; then
+            echo "file has engouh permissions"
+        fi
         if [ -s $path ]; then 
             echo "given file is not empty"
             echo "Total lines:$(wc -l < $path)"
             echo "Total words:$(wc -w < $path)"
             echo "Total characters:$(wc -m < $path)"
         fi
-        if [ -r $path ] && [ -w $path ]; then
-            echo "file has engouh permissions"
-        fi
+        
     fi
 else
     echo echo "given $path is not exists"
