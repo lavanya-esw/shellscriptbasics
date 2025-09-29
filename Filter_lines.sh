@@ -8,6 +8,6 @@ mkdir -p $output_file
 
 while IFS= read -r line; do
 
-echo "grep -q ERROR $line 1>> $output_file"
+echo "$(grep -q ERROR $line 1>> $output_file)"
 
 done < "$FILE"
