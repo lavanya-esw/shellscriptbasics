@@ -6,7 +6,7 @@ if [ ! -z $PATH ]; then
 
     if [ ! -d $PATH ]; then
         echo "given $PATH is a file"
-        if [ ! -s $PATH ]; then 
+        if [ -s $PATH ]; then 
             echo "given file is not empty"
             echo "Total lines:$(wc -l $PATH)"
             echo "Total words:$(wc -w $PATH)"
