@@ -7,7 +7,9 @@ FILE=$FILEPATH/data.csv
 
 
 while IFS= read -r line; do
+    if echo "$line" | grep -q "Devops"; then
+        echo "$line" >> "output.log"
+    fi
 
-echo "$($line | grep -i Devops >>output.log)"
 
 done < "$FILE"
