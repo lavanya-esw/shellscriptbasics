@@ -4,7 +4,7 @@ FILEPATH=$PWD
 FILE=$FILEPATH/data.csv
 output_file=$FILEPATH/output.log
 
-mkdir -p $output_file
+
 
 while IFS= read -r line; do
 
