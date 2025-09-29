@@ -10,7 +10,7 @@ fi
 
 #to check file is redable or not
 
-if [ -r "$FILEPATH"  &&  -w "$FILEPATH" ]; then
+if [ -r "$FILEPATH" ] &&  [ -w "$FILEPATH" ]; then
     echo "file is readable and writabale"
 else
     echo "file is not readable and writabale"
