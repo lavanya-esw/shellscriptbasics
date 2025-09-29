@@ -1,23 +1,23 @@
 #!/bin/bash
 
-PATH=$1
-if [ ! -z $PATH ]; then
-    echo "given $PATH is exists"
+path=$1
+if [ ! -z $path ]; then
+    echo "given $path is exists"
 
-    if [ ! -d $PATH ]; then
-        echo "given $PATH is a file"
-        if [ -s $PATH ]; then 
+    if [ ! -d $path ]; then
+        echo "given $path is a file"
+        if [ -s $path ]; then 
             echo "given file is not empty"
-            echo "Total lines:"$(wc -l < $PATH)""
-            echo "Total words:$(wc -w < $PATH)"
-            echo "Total characters:$(wc -m $PATH)"
+            echo "Total lines:"$(wc -l < $path)""
+            echo "Total words:$(wc -w < $path)"
+            echo "Total characters:$(wc -m $path)"
         fi
-        if [ -r $PATH ] && [ -w $PATH ]; then
+        if [ -r $path ] && [ -w $path ]; then
             echo "file has engouh permissions"
         fi
     fi
 else
-    echo echo "given $PATH is not exists"
+    echo echo "given $path is not exists"
 
 fi
 
