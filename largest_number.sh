@@ -1,9 +1,9 @@
 #!/bin/bash
 
-for num in $@; do 5 6 7 2
+for num in $@; do 
     temp=$num
     if [ $num -gt $temp ]; then
        temp=$num
     fi
-echo "largest number is $temp"
 done
+echo "largest number is $temp"
