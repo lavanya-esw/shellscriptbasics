@@ -8,9 +8,9 @@ if [ ! -z $path ]; then
         echo "given $path is a file"
         if [ -s $path ]; then 
             echo "given file is not empty"
-            echo "Total lines:"$(wc -l < $path)""
+            echo "Total lines:$(wc -l < $path)"
             echo "Total words:$(wc -w < $path)"
-            echo "Total characters:$(wc -m $path)"
+            echo "Total characters:$(wc -m < $path)"
         fi
         if [ -r $path ] && [ -w $path ]; then
             echo "file has engouh permissions"
