@@ -21,9 +21,9 @@ fi
 
 #check siurce directory is exists or not
 if [ -d $SOURCE_DIR ]; then
-    echo "$G Source $SOURCE_DIR is exists $N"
+    echo -e "$G Source $SOURCE_DIR is exists $N"
 else
-    echo "$R Source $SOURCE_DIR is not exists $N"
+    echo -e "$R Source $SOURCE_DIR is not exists $N"
     exit 1
 fi
 
@@ -39,7 +39,7 @@ FILES=$(find $SOURCE_DIR -type f -iname "*.log" -mtime +${DAYS})
 
 #taking backup in DEStination directory
 
-if [ ! -z $FILES ]; then
+if [ ! -z "${FILES}" ]; then
     echo -e "$B Files found for archiving $N"
     TIME_STAMP=${date +%F-%T}
     ZIP_FILENAME=$DEST_DIR/app_logs_${TIME_STAMP}.zip
