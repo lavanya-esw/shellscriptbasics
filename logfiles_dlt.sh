@@ -11,7 +11,7 @@ SOURCE_DIR=$1
 
 echo -e "$B script strted at $(date +%F-%T) $N"
 
-if [ d $SOURCE_DIR ]; then
+if [ -d $SOURCE_DIR ]; then
     echo "source $SOURCE_DIR is exists"
     FILES=$(find -type f -iname "*.log" -mtime +14)
     if [ $? -eq 0 ]; then 
