@@ -14,7 +14,7 @@ while IFS= read -r line; do
     fi
 done <<< "$DISK_USAGE"
 
-echo -e "${MESSAGE}"
+#echo -e "${MESSAGE}"
 
 sh mail.sh "lavanyaeswaravaka0606@gmail.com" "High Disk Usage Alert" "High Disk Usage" "$MESSAGE" "$IP_ADDRESS" "DevOps Team"
 
