@@ -50,11 +50,11 @@ if [ ! -z "${FILES}" ]; then
     ##check archiving is done or not
 
     if [ -f $ZIP_FILENAME ]; then
-        echo -e "archiving....$R SUCCESS $N"
+        echo -e "archiving....$G SUCCESS $N"
 
         while IFS= read -r file; do
               
-              echo -e "$(rm -rf ${SOURCE_DIR}/$file) is $R deleted $N"
+              echo -e "$(rm -rf ${SOURCE_DIR}/${file}) $file : $R deleted $N"
 
         done <<< "${FILES}"
     else
