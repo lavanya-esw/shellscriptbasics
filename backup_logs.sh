@@ -56,7 +56,7 @@ if [ ! -z "${FILES}" ]; then
               
               echo -e "$(rm -rf ${SOURCE_DIR}/$file) is $R deleted $N"
 
-        done <<< "FILES"
+        done <<< "$FILES"
     else
         echo -e "Archiving....$R FAILED $N"
     fi
