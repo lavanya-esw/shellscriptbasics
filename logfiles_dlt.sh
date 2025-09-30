@@ -14,7 +14,7 @@ echo -e "$B script strted at $(date +%F-%T) $N"
 if [ ! -z $SOURCE_DIR ]; then
     echo "source $SOURCE_DIR is exists"
     FILES=$(find -type f -iname "*.log" -mtime +14)
-    if [ $? eq 0 ]; then 
+    if [ $? -eq 0 ]; then 
         echo -e "\n $FILES"
         while IFS= read -r file; do
             echo -e "$(rm -rf $file)$file....$R deleted $N"
