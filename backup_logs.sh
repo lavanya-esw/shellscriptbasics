@@ -29,9 +29,9 @@ fi
 
 #check siurce directory is exists or not
 if [ -d $DEST_DIR ]; then
-    echo "$G Destination $DEST_DIR is exists $N"
+    echo -e "$G Destination $DEST_DIR is exists $N"
 else
-    echo "$R Destination $DEST_DIR is not exists $N"
+    echo -e "$R Destination $DEST_DIR is not exists $N"
     exit 1
 fi
 
@@ -41,7 +41,7 @@ FILES=$(find $SOURCE_DIR -type f -iname "*.log" -mtime +${DAYS})
 
 if [ ! -z "${FILES}" ]; then
     echo -e "$B Files found for archiving $N"
-    TIME_STAMP=${date +%F-%T}
+    TIME_STAMP=$(date +%F-%T)
     ZIP_FILENAME=$DEST_DIR/app_logs_${TIME_STAMP}.zip
     echo "Zip file name : $ZIP_FILENAME"
 
