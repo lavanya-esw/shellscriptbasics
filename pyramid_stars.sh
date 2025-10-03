@@ -2,5 +2,6 @@
 
 for (( i=0; i<5; i++ )); do
 #for (( i=0; i<5; i++ )); do
-    echo "number is $i"
+    for((j=i; j<=1; j++)); do
+        echo $j
 done
