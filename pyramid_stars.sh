@@ -1,9 +1,8 @@
 #!/bin/bash
-
-for (( i=0; i<5; i++ )); do
+read n
+for (( i=1; i<=5; i++ )); do
 #for (( i=0; i<5; i++ )); do
-    for((j=i; j<=1; j++)); do
-      echo " "  
+    for((j=i; j<=n; j++)); do
+      echo -n "$j"  
     done
-    echo $j
 done
