@@ -10,6 +10,6 @@ echo " cpu usage is $CPU_USAGE"
 CPU_USAGE_INT=$(printf "%.0f" "$CPU_USAGE")
 
 THERSHOLD="3"
-if [ "$CPU_USAGE_INT" -ge "$THRESHOLD" ]; then
+if [ "$CPU_USAGE_INT" -ge "$THERSHOLD" ]; then
     echo "ALERT... CPU USAGE IS ${CPU_USAGE_INT}%"
 fi
