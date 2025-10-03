@@ -3,8 +3,7 @@ read n
 for (( i=1; i<=n; i++ )); do
 #for (( i=0; i<5; i++ )); do
     for((j=i; j<=n; j++)); do
-      
-      j+=$j
+        echo -n "*"
     done
-    echo $j
+    
 done
