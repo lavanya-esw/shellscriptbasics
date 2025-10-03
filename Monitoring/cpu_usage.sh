@@ -11,3 +11,4 @@ echo "cpu usage is $CPU_USAGE_INT"
 THERSHOLD=3
 if [ "$CPU_USAGE_INT" -ge "$THERSHOLD" ]; then
     echo "ALERT......CPU USGAE  IS ${CPU_USGAE_INT}%"
+fi
