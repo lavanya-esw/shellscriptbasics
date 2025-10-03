@@ -1,5 +1,12 @@
 #!/bin/bash
 
+#     *
+#    ***
+#   *****
+#  *******
+# *********
+
+
 read -p "Enter number of rows: " n
 
 # for (( i=1; i<=n; i++ ))
@@ -26,5 +33,5 @@ for((i=1; i<=n; i++)); do
         echo -n "*"
     done
 
-    echo 
+    #echo 
 done
