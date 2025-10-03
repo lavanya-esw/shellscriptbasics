@@ -17,7 +17,7 @@ read -p "Enter number of rows: " n
 #   echo
 # done
 
-for((i=1; i<=n: i++)); do
+for((i=1; i<=n; i++)); do
     for((j=i; j<n; j++)); do
         echo -n ""
     done
