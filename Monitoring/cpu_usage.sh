@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+set -eou
 
 CPU_IDLE=$(top -bn1 | grep "Cpu(s)" | awk '{print $8}')
 echo "IDLE IS $CPU_IDLE"
