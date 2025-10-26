@@ -10,7 +10,7 @@ fi
 
 DIRECTORY_PATH=$1
 
-if [ ! -d $DIDIRECTORY_PATHR_PATH ]; then
+if [ ! -d $DIDIRECTORY_PATH ]; then
     echo "Error: Directory '$DIRECTORY_PATH' not found."
     exit 1
 fi
