@@ -12,10 +12,12 @@ DIRECTORY_PATH=$1
 if [ ! -d $DIDIRECTORY_PATH ]; then
     echo "Error: Directory '$DIRECTORY_PATH' not found."
     exit 1
-else
-    cd $DIRECTORY_PATH
-    for file in *.txt; do
-        mv $file ${file%.txt}.html
-    done
-    echo "File extension change complete..."
 fi
+cd $DIRECTORY_PATH
+for file in *.txt; do
+    if [ -e $file ]; then
+        mv $file ${file%.txt}.html
+    fi
+done
+echo "File extension change complete..."
+
