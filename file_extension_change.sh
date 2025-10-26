@@ -8,14 +8,14 @@ if [ $# -ne 1 ]; then
     exit 1
 fi
 
-DIR_PATH = $1
+DIRECTORY_PATH=$1
 
-if [ ! -d $DIR_PATH ]; then
-    echo "Error: Directory '$DIR_PATH' not found."
+if [ ! -d $DIDIRECTORY_PATHR_PATH ]; then
+    echo "Error: Directory '$DIRECTORY_PATH' not found."
     exit 1
 fi
 
-cd $DIR_PATH
+cd $DIRECTORY_PATH
 
 for file in *.txt; do
     mv $file ${file%.txt}.html
