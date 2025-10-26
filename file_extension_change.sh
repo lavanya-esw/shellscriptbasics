@@ -4,7 +4,7 @@
 
 if [ $# -ne 1 ]; then
     echo "usage : script.sh <path_of_directort>"
-    echo "Example: script.sh "path/to/myfiles"
+    echo "Example: script.sh "path/to/myfiles""
     exit 1
 fi
 
